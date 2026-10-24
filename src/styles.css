@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172338;
+  background: #f5f7fc;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f5f7fc;
+  color: #172338;
+  font-size: 13px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.people-card {
+  width: min(100%, 770px);
+  border: 1px solid #e8ebf0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(22, 35, 56, 0.07);
+}
+
+.people-card .card-body {
+  padding: 24px;
+}
+
+.app-header {
+  margin-bottom: 17px;
+}
+
+.app-header h1 {
+  margin: 0 0 3px;
+  color: #172338;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #172338;
+  font-size: 12px;
+}
+
+.form-control {
+  min-height: 34px;
+  padding: 7px 10px;
+  border-color: #e5e9ef;
+  border-radius: 9px;
+  color: #172338;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #8db2ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-control::placeholder {
+  color: #8a929e;
+  opacity: 1;
+}
+
+.button-row {
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+.btn {
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 13px;
+}
+
+.add-button {
+  background: #2864ed;
+  border-color: #2864ed;
+}
+
+.add-button:hover,
+.add-button:focus {
+  background: #1f55d2;
+  border-color: #1f55d2;
+}
+
+.clear-button {
+  border: 1px solid #e5e9ef;
+  background: #fff;
+  color: #172338;
+}
+
+.clear-button:hover {
+  border-color: #cbd2dc;
+  background: #f8fafc;
+}
+
+.validation-message {
+  margin: 10px 0 0;
+  color: #b42318;
+  font-size: 12px;
+}
+
+.table-frame {
+  overflow: hidden;
+  border: 1px solid #e6eaf0;
+  border-radius: 10px;
+}
+
+.empty-state {
+  padding: 15px 12px;
+  color: #718096;
+  text-align: center;
+  font-size: 12px;
+}
+
+.people-table {
+  color: #26354b;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.people-table thead th {
+  padding: 12px 10px;
+  background: #f7f9fb;
+  color: #172338;
+  font-weight: 700;
+  border-bottom: 1px solid #e6eaf0;
+  white-space: nowrap;
+}
+
+.people-table tbody td {
+  padding: 10px;
+  border-bottom: 0;
+}
+
+.remove-button {
+  padding: 8px 12px;
+  background: #ffe3e3;
+  border: 1px solid #ffd1d1;
+  color: #a32222;
+}
+
+.remove-button:hover,
+.remove-button:focus {
+  background: #ffd4d4;
+  border-color: #ffc1c1;
+  color: #8d1717;
+}
+
+@media (max-width: 575.98px) {
+  .app-shell {
+    padding: 24px 12px;
+  }
+
+  .people-card .card-body {
+    padding: 18px 15px;
+  }
+
+  .app-header h1 {
+    font-size: 23px;
+  }
+}
